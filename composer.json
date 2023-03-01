@@ -1,0 +1,18 @@
+{
+    "autoload": {
+        "App": "src/"
+    },
+    "description": "Remove the '#' from #repositories below to use a local checkout of psalm",
+    "#repositories": [
+        {
+            "type": "path",
+            "url": "../psalm",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "require-dev": {
+        "vimeo/psalm": "dev-master"
+    }
+}

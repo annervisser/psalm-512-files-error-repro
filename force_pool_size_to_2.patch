@@ -1,0 +1,18 @@
+Subject: [PATCH] force pool size to 2
+---
+Index: src/Psalm/Internal/Codebase/Scanner.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Psalm/Internal/Codebase/Scanner.php b/src/Psalm/Internal/Codebase/Scanner.php
+--- a/src/Psalm/Internal/Codebase/Scanner.php	(revision 06266c220b53c1ce0ccd0303e1e44402ea3af4f0)
++++ b/src/Psalm/Internal/Codebase/Scanner.php	(date 1677703406868)
+@@ -313,6 +313,7 @@
+         } else {
+             $pool_size = 1;
+         }
++        $pool_size = 2;
+ 
+         if ($pool_size > 1) {
+             $process_file_paths = [];
