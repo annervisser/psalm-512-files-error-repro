@@ -5,7 +5,7 @@ but it does require you to force psalm to use multiple threads
 
 `run.sh` will:
 - composer install
-- Apply the patch to psalm
+- Apply a [patch](https://github.com/annervisser/psalm-512-files-error-repro/blob/trunk/force_pool_size_to_2.patch) to psalm
 - Run psalm
 
 
